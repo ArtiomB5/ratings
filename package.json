@@ -7,7 +7,7 @@
     "debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "stylelint": "stylelint \"**/*.scss\" --fix"
+    "styleLint": "stylelint \"**/*.scss\" --fix"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.39.0",
