@@ -1,0 +1,36 @@
+@import "../../styles/light_scheme";
+
+.button {
+	width: 148px;
+	height: 35px;
+
+	cursor: pointer;
+	transform: all 0.5s;
+
+	color: $primary;
+	border-radius: 5px;
+
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.primary {
+	color: $white;
+	border: 1px solid $gray-buttons;
+	background-color: $primary;
+
+	&:hover {
+		background-color: $primary-hover;
+	}
+}
+
+.ghost {
+	color: $black;
+	border: 1px solid $white;
+	background-color: $white;
+
+	&:hover {
+		color: $white;
+		background-color: $primary;
+	}
+}
