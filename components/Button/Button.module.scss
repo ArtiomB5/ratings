@@ -1,8 +1,14 @@
 @import "../../styles/light_scheme";
 
 .button {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+
 	width: 148px;
 	height: 35px;
+	padding: 10px;
 
 	cursor: pointer;
 	transform: all 0.5s;

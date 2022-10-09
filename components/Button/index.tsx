@@ -24,7 +24,7 @@ export const Button = ({
       {children}
       {arrow !== "none" && (
         <span className={arrowClassName}>
-          <img src={ArrowIcon} alt="" />
+          <ArrowIcon />
         </span>
       )}
     </button>
