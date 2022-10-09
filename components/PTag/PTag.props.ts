@@ -1,10 +1,10 @@
 import { ReactNode, DetailedHTMLProps, HTMLAttributes } from "react";
 
-export interface IHTagProps
+export interface IPTagProps
   extends DetailedHTMLProps<
-    HTMLAttributes<HTMLHeadingElement>,
-    HTMLHeadingElement
+    HTMLAttributes<HTMLParagraphElement>,
+    HTMLParagraphElement
   > {
-  tag: "h1" | "h2" | "h3";
+  size?: "S" | "M" | "L";
   children: ReactNode;
 }
