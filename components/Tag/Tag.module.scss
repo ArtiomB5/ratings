@@ -1,0 +1,58 @@
+@import "../../styles/light_scheme";
+
+.tag {
+	display: inline-block;
+
+	margin: 0 5px 0 0;
+
+	cursor: pointer;
+
+	color: $black;
+	border-radius: 20px;
+}
+
+.m-size {
+	padding: 5px 12px;
+
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+}
+
+.l-size {
+	padding: 5px 8px;
+
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 19px;
+}
+
+.primary-color {
+	color: $primary;
+	border: 1px solid $primary;
+	background-color: transparent;
+}
+
+.gray-color {
+	color: $black;
+	border: 1px solid $gray-buttons;
+	background-color: transparent;
+}
+
+.green-color {
+	color: $green;
+	border: 1px solid $green-light;
+	background-color: $green-light;
+}
+
+.red-color {
+	color: $white;
+	border: 1px solid $red;
+	background-color: $red;
+}
+
+.gray-light-color {
+	color: $white;
+	border: 1px solid $gray-light;
+	background-color: $gray-light;
+}

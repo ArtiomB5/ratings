@@ -1,6 +1,6 @@
 import { ReactNode, DetailedHTMLProps, HTMLAttributes } from "react";
 
-export interface IHTagProps
+export interface IHProps
   extends DetailedHTMLProps<
     HTMLAttributes<HTMLHeadingElement>,
     HTMLHeadingElement
