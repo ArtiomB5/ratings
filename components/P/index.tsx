@@ -1,12 +1,12 @@
-import { IPTagProps } from "./PTag.props";
-import styles from "./PTag.module.scss";
+import { IPProps } from "./P.props";
+import styles from "./P.module.scss";
 import classNames from "classnames";
 
-export const PTag = ({
+export const P = ({
   size = "M",
   children,
   ...props
-}: IPTagProps): JSX.Element => {
+}: IPProps): JSX.Element => {
   const className = classNames(styles.paragraph, {
     [styles["l-size"]]: size === "L",
     [styles["m-size"]]: size === "M",

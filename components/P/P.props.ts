@@ -1,6 +1,6 @@
 import { ReactNode, DetailedHTMLProps, HTMLAttributes } from "react";
 
-export interface IPTagProps
+export interface IPProps
   extends DetailedHTMLProps<
     HTMLAttributes<HTMLParagraphElement>,
     HTMLParagraphElement
