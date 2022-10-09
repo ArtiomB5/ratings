@@ -12,6 +12,15 @@
 
 	font-size: 14px;
 	font-weight: 400;
+
+	.arrow {
+		display: inline-block;
+	}
+
+	.down {
+		transition: all 0.5s;
+		transform: rotate(90deg);
+	}
 }
 
 .primary {

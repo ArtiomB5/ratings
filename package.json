@@ -10,6 +10,7 @@
     "styleLint": "stylelint \"**/*.scss\" --fix"
   },
   "dependencies": {
+    "@svgr/webpack": "^6.4.0",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
     "@typescript-eslint/types": "^5.39.0",
