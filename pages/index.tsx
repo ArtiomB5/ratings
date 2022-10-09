@@ -2,9 +2,12 @@ import type { NextPage } from "next";
 import { Button } from "../components/Button";
 import { HTag } from "../components/H/index";
 import { P } from "../components/P";
+import { Rating } from "../components/Rating";
 import { Tag } from "../components/Tag";
+import { useState } from 'react';
 
 const Home: NextPage = (): JSX.Element => {
+  const [rating, setRating] = useState(4);
   return (
     <div>
       <HTag tag="h1">h1</HTag>
@@ -41,6 +44,8 @@ const Home: NextPage = (): JSX.Element => {
       <Tag size="L" color="red">tag</Tag>
       <Tag size="M" color="gray-light">tag</Tag>
       <Tag size="L" color="gray-light">tag</Tag>
+      <Rating rating={rating} setRating={setRating}/>
+      <Rating rating={rating} setRating={setRating} isEditable={true}/>
     </div>
   );
 };

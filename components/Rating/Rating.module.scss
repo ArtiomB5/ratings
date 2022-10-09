@@ -1,0 +1,29 @@
+@import "../../styles/light_scheme";
+
+.stars {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: flex-start;
+
+	.star-wrapper {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: center;
+
+		width: 30px;
+
+		.star-ghost {
+			cursor: pointer;
+
+			&:hover {
+				fill: $primary;
+			}
+		}
+
+		.star-filled {
+			fill: $primary;
+		}
+	}
+}
