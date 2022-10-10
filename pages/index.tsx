@@ -5,11 +5,12 @@ import { P } from "../components/P";
 import { Rating } from "../components/Rating";
 import { Tag } from "../components/Tag";
 import { useState } from 'react';
+import { Layout } from "../layout";
 
 const Home: NextPage = (): JSX.Element => {
   const [rating, setRating] = useState(4);
   return (
-    <div>
+    <Layout>
       <HTag tag="h1">h1</HTag>
       <HTag tag="h2">h1</HTag>
       <HTag tag="h3">h1</HTag>
@@ -46,7 +47,7 @@ const Home: NextPage = (): JSX.Element => {
       <Tag size="L" color="gray-light">tag</Tag>
       <Rating rating={rating} setRating={setRating}/>
       <Rating rating={rating} setRating={setRating} isEditable={true}/>
-    </div>
+    </Layout>
   );
 };
 
