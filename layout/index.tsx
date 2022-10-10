@@ -1,9 +1,10 @@
+import { FunctionComponent } from "react";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { ILayoutProps } from "./Layout.props";
 import { Sidebar } from "./Sidebar";
 
-export const Layout = ({ children }: ILayoutProps): JSX.Element => {
+const Layout = ({ children }: ILayoutProps): JSX.Element => {
   return (
     <>
       <Header />
@@ -14,4 +15,14 @@ export const Layout = ({ children }: ILayoutProps): JSX.Element => {
       <Footer />
     </>
   );
+};
+
+export const withLayout = <T extends Record<string, unknown>>(Component: FunctionComponent<T>) => {
+  return function withLayoutComponent(props: T): JSX.Element {
+    return (
+      <Layout>
+        <Component {...props}/>
+      </Layout>
+    );
+  };
 };
